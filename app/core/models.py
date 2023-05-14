@@ -1,5 +1,5 @@
 """
-Database Models.
+Database models.
 """
 
 from django.conf import settings
@@ -43,7 +43,6 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     objects = UserManager()
 
-    # here we changing the default username_field to our own from default one.
     USERNAME_FIELD = 'email'
 
 
